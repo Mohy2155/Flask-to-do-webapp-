@@ -47,20 +47,26 @@ Initialize an isolated local virtual environment directory to separate package e
 ```bash
 # Initialize the virtual environment directory
 python -m venv venv
-
-# Windows Activation Script Execution
+```
+ Windows Activation Script Execution
+```bash
 .\venv\Scripts\activate
+```
 
-# UNIX / macOS Shell Activation Script Execution
+ UNIX / macOS Shell Activation Script Execution
+```bash
 source venv/bin/activate
+```
 
-# Execute structured package dependency installation
+ Execute structured package dependency installation
+```bash
 pip install -r requirements.txt
-2. Application Server Launch Sequence
+```
+### 2. Application Server Launch Sequence
 Execute the primary script file using the virtualized Python runtime to boot up the internal WSGI development application server:
-
+```bash
 python app.py
-
+```
 The application server will initialize native logging pipelines and establish listening channels on the local network stack interface (http://127.0.0.1:5000).
 
 Middleware & Error Handling Architecture
